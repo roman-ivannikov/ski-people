@@ -1,0 +1,121 @@
+.header {
+
+    // .header__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-areas:
+            'logo links'
+            'search search';
+        gap: 17px;
+        align-items: center;
+        padding: 18px 0 16px;
+        border-bottom: 1px solid #EEEFF2;
+
+        @media (min-width: 768px) {
+            gap: 14px;
+            padding-top: 15px;
+            padding-bottom: 16px;
+        }    
+        @media (min-width: 1024px) {
+            grid-template-areas: 'logo search links';
+            padding-top: 16px;
+            padding-bottom: 15px;
+            column-gap: 82px;
+        }
+        @media (min-width: 1440px) {
+            column-gap: 188px;
+        }   
+    }
+
+    // .header__logo
+
+    &__logo {
+        grid-area: logo;
+        width: 106px;
+
+        @media (min-width: 768px) {
+            width: 130px;
+        }
+    }
+
+    // .header__search
+
+    &__search {
+        grid-area: search;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            width: 408px;
+        }
+
+        @media (min-width: 1440px) {
+            width: 514px;
+        }
+    }
+
+    // .header__links
+
+    &__links {
+        grid-area: links;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: #1C1C1C;
+
+        @media (min-width: 1024px) {
+            gap: 24px;
+        }
+
+        & .link__text {
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+
+    }
+}
+.logo {
+
+    // .logo__link
+
+    &__link {
+    }
+
+    // .logo__image
+
+    &__image {
+    }
+}
+.link {
+
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    &-cart {
+        flex-direction: row-reverse;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    // .link__text
+
+    &__text {
+    }
+
+    // .link__icon
+
+    &__icon {
+    }
+
+    // .link__count
+
+    &__count {
+    }
+}
