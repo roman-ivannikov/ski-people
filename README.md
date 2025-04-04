@@ -1,0 +1,2 @@
+# ski-people
+METHED Intensive
