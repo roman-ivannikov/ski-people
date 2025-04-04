@@ -31,3 +31,18 @@ input {
         transform: translateY(-50%);
     }
 }
+
+.logo {
+    &__image {
+        width: 100%;
+    }
+}
+
+.social {
+
+    // .social__link
+
+    &__link {
+        display: block;
+    }
+}
