@@ -1,6 +1,8 @@
 .catalog {
 
     padding: 20px 0 28px;
+    overflow-x: hidden;
+    width: fit-content;
     // .catalog__list
 
     @media (min-width: 768px) {

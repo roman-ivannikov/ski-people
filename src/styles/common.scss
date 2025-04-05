@@ -46,3 +46,60 @@ input {
         display: block;
     }
 }
+
+.btn {
+    border-radius: 32px;
+    border: 1px solid transparent;
+    padding: 11px 23px;
+    transition: all .4s;
+    outline: none;
+
+    max-width: 302px;
+
+    color: #ffffff;
+    background-color: #0044F0;
+    border-color: #0044F0;
+
+    &:not(:disabled):focus-visible {
+        border-color: #042F9C;
+    }
+
+    &:not(:disabled):hover {
+        background-color: #0945DE;
+        border-color: #0945DE;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: .2;
+    }
+
+    &-second {
+        color: #0044F0;
+        background-color: #ffffff;
+
+        &:not(:disabled):hover {
+            color: #ffffff;
+            background-color: #0044F0;
+            border-color: #0044F0;
+        }
+    }
+
+    &-like {
+        width: 16px;
+        height: 16px;
+
+        & svg path {
+            fill: #ffffff;
+            stroke: #1C1C1C;
+        }
+    }
+
+    
+
+    &-like--active svg path {
+        fill: #0044F0;
+        stroke: #0044F0;
+    }
+}
+
