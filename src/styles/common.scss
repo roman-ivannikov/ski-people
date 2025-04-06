@@ -8,9 +8,8 @@ h2 {
     }
 }
 
-input {
-    padding: 12px 24px;
-    height: 38px;
+input, textarea {
+    padding: 11px 13px;
     max-width: 100%;
     border-radius: 4px;
     background-color: #EEEFF2;
@@ -18,9 +17,18 @@ input {
     border: 1px solid transparent;
     outline: none;
 
+    &[type="search"] {
+        padding: 12px 24px;
+        border-radius: 32px;
+    }
+
     &:focus, &:active, &:focus-visible {
         border-color: #DFE3EB;
     }
+}
+
+input:not([type="radio"]) {
+    height: 38px;
 }
 
 .search {
@@ -28,7 +36,6 @@ input {
 
     &__input {
         width: 100%;
-        border-radius: 32px;
         padding-right: 40px;
     }
 

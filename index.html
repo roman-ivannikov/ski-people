@@ -61,6 +61,7 @@
 
     <main class="main">
       
+      <!--
       <div class="catalog">
         <div class="container">
           <ul class="catalog__list">
@@ -72,7 +73,9 @@
           </ul>
         </div>
       </div>
+      -->
 
+      <!--
       <div class="breadcrumb">
         <div class="container">
           <nav class="breadcrumb__navifation">
@@ -84,7 +87,9 @@
           </nav>
         </div>
       </div>
+      -->
 
+      <!--
       <section class="goods">
         <div class="container">
           <h2 class="goods__title">Избранное</h2>
@@ -248,7 +253,9 @@
           </ul>
         </div>
       </section>
-      
+      -->
+
+      <!--
       <section class="product">
         <div class="container product__container">
           <h2 class="product__title">Горные лыжи</h2>
@@ -324,6 +331,7 @@
           </div>
         </div>
       </section>
+      -->
 
       <section class="cart">
         <div class="container">
@@ -332,7 +340,8 @@
             <ul class="cart__list">
               <li class="cart__item">
                 <img src="/img/ski_mini.jpg" alt="Лыжи" class="cart__item-image">
-                <h3 class="cart__item-title">Горные лыжи</h3>
+
+                <p class="cart__item-title">Горные лыжи</p>
                 <p class="cart__item-price">5&nbsp;000&nbsp;₽</p>
                 <p class="cart__item-id">арт. 84348945757</p>
                 <div class="cart__item-action count">
@@ -343,24 +352,14 @@
               </li>
             </ul>
 
-            <div class="cart__info">
-              <h3 class="cart__info-title">Оформление</h3>
-              <div class="cart__info-summary">
-                <span>4 товара на сумму:</span>
-                <span>20&nbsp;000&nbsp;₽</span>
-              </div>
-              <p class="cart__info-delivery">Доставка 0&nbsp;₽</p>
-              <button class="btn cart__info-btn" type="submit" form="orderForm">Оформить заказ</button>
-            </div>
-
             <form action="#" method="POST" class="cart__form" id="orderForm">
-              <h3 class="cart__form-title">Данные для доставки</h3>
-              <fieldset class="cart__form-group">
+              <fieldset class="cart__form-group cart__form-inputs">
+                <legend class="cart__form-legend">Данные для доставки</legend>
                 <input type="text" name="name" class="cart__form-input" placeholder="Фамилия Имя Отчество">
                 <input type="tel" name="tel" class="cart__form-input" placeholder="Телефон">
                 <input type="email" name="email" class="cart__form-input" placeholder="E-mail">
                 <input type="text" name="address" class="cart__form-input" placeholder="Адрес доставки">
-                <textarea name="comment" id="comment" class="cart__form-input" placeholder="Комментарий к заказу"></textarea>
+                <textarea name="comment" id="comment" class="cart__form-input" placeholder="Комментарий к заказу" rows="7"></textarea>
               </fieldset>
               <fieldset class="cart__form-group">
                 <legend class="cart__form-legend">Доставка</legend>
@@ -385,11 +384,23 @@
                 </label>
               </fieldset>
             </form>
+
+            <div class="cart__info">
+              <p class="cart__info-title">Оформление</p>
+              <div class="cart__info-summary">
+                <span>4 товара на сумму:</span>
+                <span>20&nbsp;000&nbsp;₽</span>
+              </div>
+              <p class="cart__info-delivery">Доставка 0&nbsp;₽</p>
+              <button class="btn cart__info-btn" type="submit" form="orderForm">Оформить заказ</button>
+            </div>
+            
           </div>
           
         </div>
       </section>
 
+      <!--
       <section class="order">
         <div class="container order__container">
           <div class="order__wrapper">
@@ -433,6 +444,7 @@
           </div>
         </div>
       </section>
+      -->
     </main>
 
     <footer class="footer">

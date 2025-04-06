@@ -1,0 +1,254 @@
+.cart {
+
+    padding-top: 24px;
+    padding-bottom: 60px;
+
+    color: #1C1C1C;
+
+    @media (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 80px;
+    }
+
+    // .cart__title
+
+    &__title {
+        margin-bottom: 24px;
+        
+    }
+
+    // .cart__body
+
+    &__body {
+    }
+
+    // .cart__list
+
+    &__list {
+        padding-bottom: 24px;
+
+        @media (min-width: 768px) {
+            padding-bottom: 32px;
+        }
+    }
+
+    // .cart__item
+
+    &__item {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            
+        }
+    }
+
+    // .cart__item-image
+
+    &__item-image {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        border-radius: 16px;
+        aspect-ratio: 1.21;
+        max-width: 80px;
+
+        @media (min-width: 768px) {
+            max-width: 120px;
+        }
+
+    }
+
+    // .cart__item-title
+
+    &__item-title {
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+
+        @media (min-width: 768px) {
+            grid-column: 2 / 3;
+            padding-top: 12px;
+        }
+    }
+
+    // .cart__item-price
+
+    &__item-price {
+        grid-column: 3 / -1;
+        grid-row: 3 / 4;
+
+        @media (min-width: 768px) {
+            grid-row: 1 / -1;
+            align-self: start;
+            justify-self: flex-end;
+            padding-top: 12px;
+        }
+    }
+
+    // .cart__item-id
+
+    &__item-id {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        font-size: 9px;
+        color: #969EAE;
+        margin-top: 4px;
+        margin-bottom: 13px;
+
+        @media (min-width: 768px) {
+            grid-column: 2 / 3;
+            margin-top: 6px;
+            margin-bottom: 24px;
+        }
+    }
+
+    // .cart__item-action
+
+    &__item-action {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+
+        @media (min-width: 768px) {
+            grid-column: 2 / -1;
+        }
+    }
+
+    // .cart__info
+
+    &__info {
+        padding-top: 24px;
+        border-top: 1px solid #EEEFF2;
+    }
+
+    // .cart__info-title
+
+    &__info-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    // .cart__info-summary
+
+    &__info-summary {
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .cart__info-delivery
+
+    &__info-delivery {
+        font-size: 9px;
+        color: #969EAE;
+        margin-bottom: 8px;
+    }
+
+    // .cart__info-btn
+
+    &__info-btn {
+        width: 100%;
+    }
+
+    // .cart__form
+
+    &__form {
+        padding: 24px 0;
+        border-top: 1px solid #EEEFF2;
+
+        @media (min-width: 768px) {
+            padding: 32px 0;
+        }
+    }
+
+    // .cart__form-group
+
+    &__form-group {
+        padding: 0;
+        border: none;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        textarea {
+            flex-grow: 1;
+        }
+
+    }
+
+    &__form-inputs {
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+
+    // .cart__form-input
+
+    &__form-input {
+        @media (min-width: 768px) {
+            &:not(textarea) {
+                flex-basis: calc(50% - 5px);
+            }
+        }
+    }
+
+    // .cart__form-legend
+
+    &__form-legend {
+        font-size: 16px;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+
+    // .cart__form-label
+
+    &__form-label {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        color: #151515;
+    }
+
+    // .cart__form-radio
+
+    &__form-radio {
+    }
+}
+
+.count {
+
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 4px 10px;
+    border-radius: 32px;
+    border: 1px solid #EEEFF2;
+    width: fit-content;
+
+    color: #1C1C1C;
+    font-size: 12px;
+    // .count__minus
+
+    &__minus {
+    }
+
+    // .count__num
+
+    &__num {
+    }
+
+    // .count__plus
+
+    &__plus {
+    }
+}
+
