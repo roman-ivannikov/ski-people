@@ -1,0 +1,246 @@
+.product {
+
+    padding-bottom: 60px;
+    
+    @media (min-width: 768px) {
+        padding-bottom: 80px;
+    }
+    // .product__container
+
+    &__container {
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: auto 302px;
+            grid-template-rows: repeat(2, auto);
+            column-gap: 16px;
+            row-gap: 40px;
+        }
+        @media (min-width: 1440px) {
+            grid-template-columns: auto 408px;
+        }
+    }
+
+    // .product__title
+
+    &__title {
+        margin-bottom: 24px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 0;
+            grid-column: 1 / -1;
+        }
+    }
+
+    // .product__slider
+
+    &__slider {
+        margin-bottom: 32px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+
+    // .product__info
+
+    &__info {
+        color: #1C1C1C;
+    }
+
+    // .product__price
+
+    &__price {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    // .product__id
+
+    &__id {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 32px;
+        background-color: #EEEFF2;
+        margin-bottom: 24px;
+    }
+
+    // .product__char
+
+    &__char {
+        margin-bottom: 24px;
+    }
+
+    // .product__char-title
+
+    &__char-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    // .product__char-table
+
+    &__char-table {
+    }
+		
+    // .product__action
+
+    &__action {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+
+    // .product__btn
+
+    &__btn {
+        flex-grow: 1;
+    }
+
+    // .product__like
+
+    &__like {
+    }
+}
+.slider {
+
+    // .slider__body
+
+    &__body {
+        position: relative;
+    }
+
+    // .slider__image
+
+    &__image {
+        border-radius: 16px;
+        width: 100%;
+        aspect-ratio: 1.22;
+        object-fit: cover;
+
+        @media (min-width: 768px) {
+            aspect-ratio: 1.21;
+        }
+    }
+
+    // .slider__arrow
+
+    &__arrow {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+
+        & svg path {
+            fill: #1C1C1C;
+        }
+
+        &:hover {
+            background-color: #ffffff;
+
+            & svg path {
+                fill: #0044F0;
+            }
+        }
+    }
+
+    // .slider__arrow-left
+
+    &__arrow-left {
+        left: 16px;
+    }
+
+    // .slider__arrow-right
+
+    &__arrow-right {
+        right: 16px;
+    }
+
+    // .slider__thumbnails
+
+    &__thumbnails {
+        display: none;
+
+        @media (min-width: 768px) {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: nowrap;
+            column-gap: 14px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-top: 12px;
+            column-gap: 12px;
+        }
+
+        @media (min-width: 1440px) {
+            margin-top: 16px;
+            column-gap: 16px;
+        }
+    }    
+    // .slider__thumbnails-item
+
+    &__thumbnails-item {
+        flex-basis: 25%;
+        max-width: 25%;
+        cursor: pointer;
+    }
+
+    // .slider__thumbnails-image
+
+    &__thumbnails-image {
+        @media (min-width: 768px) {
+            border-radius: 16px;
+            width: 100%;
+            aspect-ratio: 1.21;
+            object-fit: cover;
+        }
+    }
+}
+.table {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    // .table__row
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #EEEFF2;
+    }
+
+    // .table__column
+
+    &__column {
+    }
+
+    // .table__column-left
+
+    &__column-left {
+        color: #969EAE;
+    }
+
+    // .table__column-right
+
+    &__column-right {
+        color: #1C1C1C;
+    }
+}
