@@ -63,9 +63,11 @@ input {
     padding: 11px 23px;
     transition: all .4s;
     outline: none;
+    display: block;
 
     font-size: 12px;
     line-height: 1.167;
+    text-align: center;
 
     color: #ffffff;
     background-color: #0044F0;
@@ -112,5 +114,13 @@ input {
         fill: #0044F0;
         stroke: #0044F0;
     }
+}
+
+.badge-id {
+    font-size: 12px;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 32px;
+    background-color: #EEEFF2;
 }
 

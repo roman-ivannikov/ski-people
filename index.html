@@ -61,7 +61,6 @@
 
     <main class="main">
       
-      <!--
       <div class="catalog">
         <div class="container">
           <ul class="catalog__list">
@@ -73,7 +72,7 @@
           </ul>
         </div>
       </div>
-      -->
+
       <div class="breadcrumb">
         <div class="container">
           <nav class="breadcrumb__navifation">
@@ -86,7 +85,6 @@
         </div>
       </div>
 
-      <!--
       <section class="goods">
         <div class="container">
           <h2 class="goods__title">Избранное</h2>
@@ -250,7 +248,6 @@
           </ul>
         </div>
       </section>
-      -->
       
       <section class="product">
         <div class="container product__container">
@@ -286,7 +283,7 @@
           </div>
           <div class="product__info">
             <p class="product__price">5&nbsp;000&nbsp;₽</p>
-            <p class="product__id">арт. 84348945757</p>
+            <p class="product__id badge-id">арт. 84348945757</p>
             <div class="product__char">
               <h3 class="product__char-title">Общие характеристики</h3>
               <div class="product__char-table table">
@@ -394,16 +391,18 @@
       </section>
 
       <section class="order">
-        <div class="container">
+        <div class="container order__container">
           <div class="order__wrapper">
             <div class="order__summary">
-              <h2 class="order__title">Заказ успешно размещен</h2>
+              <p class="order__title">Заказ успешно размещен</p>
               <p class="order__sum">20&nbsp;000&nbsp;₽</p>
-              <p class="order__number">№43435</p>
+              <div class="order__number">
+                <p class="badge-id">№43435</p>
+              </div>
             </div>
             <div class="order__info">
-              <h3 class="order__subtitle">Данные доставки</h3>
-              <div class="order__characteristics table">
+              <p class="order__subtitle">Данные доставки</p>
+              <div class="order__char table">
                 <div class="table__row">
                   <div class="table__column table__column-left">Получатель</div>
                   <div class="table__column table__column-right">Иванов Петр Александрович</div>
@@ -430,7 +429,7 @@
                 </div>
               </div>
             </div>
-            <a href="/" class="btn order__btn">На главную</a>
+            <a href="/" class="btn order__btn">На главную</a>  
           </div>
         </div>
       </section>
