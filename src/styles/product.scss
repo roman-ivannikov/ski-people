@@ -38,6 +38,8 @@
     // .product__slider
 
     &__slider {
+        width: 832px;
+        height: 688px;
         margin-bottom: 32px;
 
         @media (min-width: 768px) {
@@ -107,10 +109,11 @@
 }
 .slider {
 
+    position: relative;
     // .slider__body
 
     &__body {
-        position: relative;
+        
     }
 
     // .slider__image
