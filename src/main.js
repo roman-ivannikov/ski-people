@@ -1,6 +1,16 @@
 import './normalize.css';
 import './style.scss';
 
+
+import { initRouter } from './js/router';
+
+const init = () => {
+    initRouter();
+}
+
+init();
+
+
 import Swiper from 'swiper';
 import { Navigation, Thumbs } from 'swiper/modules';
 import 'swiper/css';
