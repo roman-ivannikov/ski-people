@@ -8,9 +8,7 @@ import 'swiper/css/navigation';
 
 const thumb = new Swiper(".product__slider-thumbnails", {
     slidesPerView: 4,
-    freeMode: true,
     watchSlidesProgress: true,
-    enabled: false,
     breakpoints: {
         768: {
             spaceBetween: 14
@@ -24,7 +22,7 @@ const thumb = new Swiper(".product__slider-thumbnails", {
     }
 });
 
-const swiper = new Swiper(".product__slider", {
+const swiper = new Swiper(".product__slider-big", {
     spaceBetween: 0,
     loop: true,
     modules: [ Navigation, Thumbs ],
